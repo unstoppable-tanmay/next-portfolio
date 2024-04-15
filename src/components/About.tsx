@@ -6,7 +6,7 @@ import { Parallax } from "react-scroll-parallax";
 
 const About = ({ about }: { about: AboutType }) => {
   return (
-    <Parallax scale={[2, 1]}>
+    <Parallax scale={[1.4, .7]}>
       <section className="h-screen w-full flex items-center justify-center flex-col" id="about">
         <div className="heading text-3xl font-semibold text-white">
           <span className="text-7xl">A</span>bout

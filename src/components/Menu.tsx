@@ -88,7 +88,7 @@ const Menu = ({ about }: { about: About }) => {
           initial={{ opacity: 0 }}
           animate={
             isOpen
-              ? { opacity: 1, transition: { ease: "easeInOut", delay: 1.2 } }
+              ? { opacity: 1, transition: { ease: "easeInOut", delay: 1 } }
               : { opacity: 0 }
           }
           className="menu-item hover:translate-x-4 duration-200 w-[150px]"
@@ -99,7 +99,7 @@ const Menu = ({ about }: { about: About }) => {
           initial={{ opacity: 0 }}
           animate={
             isOpen
-              ? { opacity: 1, transition: { ease: "easeInOut", delay: 1.4 } }
+              ? { opacity: 1, transition: { ease: "easeInOut", delay: 1.2 } }
               : { opacity: 0 }
           }
           className="menu-item hover:translate-x-4 duration-200 w-[150px]"
