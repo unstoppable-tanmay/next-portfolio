@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import Menu from "./Menu";
 import Landing from "./Landing";
 import { Data } from "@/types/type";
@@ -15,9 +15,20 @@ import Timeline from "./Timeline";
 import Testimonial from "./Testimonial";
 import Contact from "./Contact";
 
+import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
+
 const Main = ({ data }: { data: Data }) => {
+  const lenis = useLenis(({ scroll }) => {});
   return (
     <ParallaxProvider>
+      <ReactLenis
+        root
+        // options={{
+        //   lerp: isMobile ? 0.05 : 0.06,
+        //   syncTouch: true,
+        //   smoothTouch: true,
+        // }}
+      ></ReactLenis>
       <main className="main w-full min-h-screen overflow-x-clip relative">
         <Cursor isGelly={true} cursorBackgrounColor="#fff" />
 

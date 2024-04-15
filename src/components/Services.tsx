@@ -5,7 +5,7 @@ import React from "react";
 
 const Services = ({ services }: { services: Service[] }) => {
   return (
-    <section className="min-h-screen w-full flex flex-col gap-4 items-center justify-center p-4 py-8">
+    <section className="min-h-screen w-full flex flex-col gap-4 items-center justify-center p-4 py-8" id="services">
       <div className="w-[clamp(200px,70%,90vw)] header flex items-center justify-between text-[clamp(30px,4vw,90px)]">
         {"SERVICES".split("").map((l, i) => (
           <span key={i}>{l}</span>

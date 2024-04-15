@@ -5,7 +5,7 @@ import React, { useState } from "react";
 const Skills = ({ skills }: { skills: Skill[] }) => {
   const [hoveredSkill, setHoveredSkill] = useState<Skill | null>();
   return (
-    <div className="min-h-screen w-full p-6 flex flex-wrap gap-4 md:gap-8 group text-white relative">
+    <div className="min-h-screen w-full p-6 flex flex-wrap gap-4 md:gap-8 group text-white relative" id="skills">
       {hoveredSkill && (
         <div className="hidden percentage absolute text-[clamp(70px,10vw,150px)] font-bold self-center sm:flex items-center justify-center w-full">
           {hoveredSkill?.percentage}%

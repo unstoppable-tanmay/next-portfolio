@@ -7,7 +7,7 @@ import { Parallax } from "react-scroll-parallax";
 
 const Landing = ({ about }: { about: About }) => {
   return (
-    <section className="w-full relative min-h-[80vh] flex p-6 items-center justify-center flex-wrap">
+    <section className="w-full relative min-h-[80vh] flex p-6 items-center justify-center flex-wrap" id="home">
       <Parallax speed={30}>
         <motion.h1
           initial={{ opacity: 0 }}

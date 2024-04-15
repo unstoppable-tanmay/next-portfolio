@@ -17,7 +17,9 @@ const Menu = ({ about }: { about: About }) => {
         }
         className="menu z-[100] fixed w-screen h-screen bg-white/5 backdrop-blur-2xl top-0 left-0 duration-500 flex items-center justify-center gap-5 flex-col text-lg "
       >
-        <motion.div
+        <motion.a
+          onClick={(e) => setOpen(false)}
+          href="/#home"
           initial={{ opacity: 0 }}
           animate={
             isOpen
@@ -27,8 +29,10 @@ const Menu = ({ about }: { about: About }) => {
           className="menu-item hover:translate-x-4 duration-200 w-[150px]"
         >
           Home
-        </motion.div>
-        <motion.div
+        </motion.a>
+        <motion.a
+          onClick={(e) => setOpen(false)}
+          href="/#about"
           initial={{ opacity: 0 }}
           animate={
             isOpen
@@ -38,8 +42,10 @@ const Menu = ({ about }: { about: About }) => {
           className="menu-item hover:translate-x-4 duration-200 w-[150px]"
         >
           About
-        </motion.div>
-        <motion.div
+        </motion.a>
+        <motion.a
+          onClick={(e) => setOpen(false)}
+          href="/#skills"
           initial={{ opacity: 0 }}
           animate={
             isOpen
@@ -49,8 +55,10 @@ const Menu = ({ about }: { about: About }) => {
           className="menu-item hover:translate-x-4 duration-200 w-[150px]"
         >
           Skills
-        </motion.div>
-        <motion.div
+        </motion.a>
+        <motion.a
+          onClick={(e) => setOpen(false)}
+          href="/#services"
           initial={{ opacity: 0 }}
           animate={
             isOpen
@@ -60,8 +68,10 @@ const Menu = ({ about }: { about: About }) => {
           className="menu-item hover:translate-x-4 duration-200 w-[150px]"
         >
           Services
-        </motion.div>
-        <motion.div
+        </motion.a>
+        <motion.a
+          onClick={(e) => setOpen(false)}
+          href="/#projects"
           initial={{ opacity: 0 }}
           animate={
             isOpen
@@ -71,19 +81,10 @@ const Menu = ({ about }: { about: About }) => {
           className="menu-item hover:translate-x-4 duration-200 w-[150px]"
         >
           Projects{" "}
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={
-            isOpen
-              ? { opacity: 1, transition: { ease: "easeInOut", delay: 1 } }
-              : { opacity: 0 }
-          }
-          className="menu-item hover:translate-x-4 duration-200 w-[150px]"
-        >
-          Timeline{" "}
-        </motion.div>
-        <motion.div
+        </motion.a>
+        <motion.a
+          onClick={(e) => setOpen(false)}
+          href="/#testimonial"
           initial={{ opacity: 0 }}
           animate={
             isOpen
@@ -93,7 +94,7 @@ const Menu = ({ about }: { about: About }) => {
           className="menu-item hover:translate-x-4 duration-200 w-[150px]"
         >
           Testimonial{" "}
-        </motion.div>
+        </motion.a>
         <motion.div
           initial={{ opacity: 0 }}
           animate={

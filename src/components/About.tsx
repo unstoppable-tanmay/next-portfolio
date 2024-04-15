@@ -6,8 +6,8 @@ import { Parallax } from "react-scroll-parallax";
 
 const About = ({ about }: { about: AboutType }) => {
   return (
-    <Parallax opacity={[1, .3]}>
-      <section className="h-screen w-full flex items-center justify-center flex-col">
+    <Parallax scale={[2, 1]}>
+      <section className="h-screen w-full flex items-center justify-center flex-col" id="about">
         <div className="heading text-3xl font-semibold text-white">
           <span className="text-7xl">A</span>bout
         </div>
