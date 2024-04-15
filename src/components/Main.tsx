@@ -12,6 +12,8 @@ import Skills from "./Skills";
 import Services from "./Services";
 import Projects from "./Projects";
 import Timeline from "./Timeline";
+import Testimonial from "./Testimonial";
+import Contact from "./Contact";
 
 const Main = ({ data }: { data: Data }) => {
   return (
@@ -24,8 +26,10 @@ const Main = ({ data }: { data: Data }) => {
         <About about={data.user.about} />
         <Skills skills={data.user.skills} />
         <Services services={data.user.services} />
-        {/* <Projects projects={data.user.projects} /> */}
+        <Projects projects={data.user.projects} />
         {/* <Timeline timeline={data.user.timeline} /> */}
+        <Testimonial testimonials={data.user.testimonials} />
+        <Contact social_handles={data.user.social_handles} />
       </main>
     </ParallaxProvider>
   );
