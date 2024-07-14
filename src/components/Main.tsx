@@ -36,7 +36,7 @@ const Main = ({ data }: { data: Data }) => {
         <Landing about={data.user.about} />
         <About about={data.user.about} />
         <Skills skills={data.user.skills} />
-        <Services services={data.user.services} />
+        {/* <Services services={data.user.services} /> */}
         <Projects projects={data.user.projects} />
         {/* <Timeline timeline={data.user.timeline} /> */}
         <Testimonial testimonials={data.user.testimonials} />

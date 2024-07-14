@@ -43,13 +43,18 @@ const ProjectCard = ({ project, i }: { project: Project; i: number }) => {
             className="w-full h-full absolute -z-10"
           />
           <div className="details flex flex-col gap-2 items-center justify-center w-full h-full p-[10%] text-center z-[100] bg-black/70 opacity-0 hover:opacity-100 duration-300">
-            <div className="heading text-3xl md:text-4xl font-medium">{project.title}</div>
+            <div className="heading text-3xl md:text-4xl font-medium">
+              {project.title}
+            </div>
             <div className="desc text-xs md:text-sm line-clamp-3">
               {project.description}
             </div>
             <div className="stack flex gap-2 flex-wrap items-center justify-center">
               {project.techStack.map((stack, ind) => (
-                <span className="px-2 rounded-full bg-white/30 text-xs md:text-sm" key={ind}>
+                <span
+                  className="px-2 rounded-full bg-white/30 text-xs md:text-sm"
+                  key={ind}
+                >
                   {stack}
                 </span>
               ))}
@@ -68,13 +73,18 @@ const ProjectCard = ({ project, i }: { project: Project; i: number }) => {
             className="w-full h-full absolute -z-10"
           />
           <div className="details flex flex-col gap-2 items-center justify-center w-full h-full p-[10%] text-center z-[100] bg-black/70 opacity-0 hover:opacity-100 duration-300">
-            <div className="heading text-3xl md:text-4xl font-medium">{project.title}</div>
+            <div className="heading text-3xl md:text-4xl font-medium">
+              {project.title}
+            </div>
             <div className="desc text-xs md:text-sm line-clamp-3">
               {project.description}
             </div>
             <div className="stack flex gap-2 flex-wrap items-center justify-center">
               {project.techStack.map((stack, ind) => (
-                <span className="px-2 rounded-full bg-white/30 text-xs md:text-sm" key={ind}>
+                <span
+                  className="px-2 rounded-full bg-white/30 text-xs md:text-sm"
+                  key={ind}
+                >
                   {stack}
                 </span>
               ))}
